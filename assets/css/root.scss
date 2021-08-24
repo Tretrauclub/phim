@@ -1,0 +1,109 @@
+body {
+    background: var(--mainbackground);
+    font-family: Nunito,sans-serif;
+    overflow-x: hidden;
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .bg-component{
+        background: var(--componentbackground);
+    }
+
+    ._t-hover-yellow {
+        transition: 0.3s all ease;
+        &:hover {
+            color: var(--yellow2) !important;
+            text-decoration: none;
+        }
+    }
+
+    ._active {
+        color: var(--yellow1) !important;
+        font-weight: bold;
+    }
+    
+    ._star {
+        font-size: 12px;
+        i {
+          color: var(--white);
+          &.active {
+            color: var(--yellow1);
+          }
+        }
+      }
+      
+//   SCROLL-dark 
+    &::-webkit-scrollbar {
+        width: 12px;
+        background-color: var(--dark1);
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 3px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+        background-color: var(--dark3);
+    }
+
+    &::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        border-radius: 3px;
+        background-color: var(--dark1);
+    }
+}
+
+/**  SCROLL dark */
+.scroll-dark::-webkit-scrollbar {
+	width: 12px;
+	background-color: var(--dark1);
+}
+.scroll-dark::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--dark3);
+}
+
+.scroll-dark::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	background-color: var(--dark1);
+}
+
+/**  SCROLL yellow */
+.scroll-yellow--small::-webkit-scrollbar {
+	width: 8px;
+	// background-color: var(--yellow1);
+}
+.scroll-yellow--small::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--yellow1);
+}
+
+.scroll-yellow--small::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	// background-color: var(--yellow1);
+}
+
+:root {
+    --mainbackground: #78909c;
+    --componentbackground: #313534;
+    --white: #fff;
+    // --white:rgb(233, 232, 228);
+    --tear: #009688;
+    --orange: #f45b69;
+    --dark1: #252827;
+    --dark3: #335666;
+    --gray1: #7d7d7d;
+    --gray2: #b9b9b9;
+    --codeclass: #c56625; 
+    --yellow1: #ffc107;
+    --yellow2: #ffeb3b;
+}
